@@ -1,5 +1,6 @@
 language: C
-before_install: sudo apt-get install check
+before_install:
+- sudo apt-get install check
 script: make clean && make test
   
 # uncomment this line if your project needs to run something other than `rake`:
