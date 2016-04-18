@@ -175,14 +175,14 @@ Suite* coord_2d_suite(void)
 }
 START_TEST(coord_2d_area_triangle)
 {
-    coord_2d_t *a;
-    coord_2d_t *b;
-    coord_2d_t *c;
+    coord_2d_t a;
+    coord_2d_t b;
+    coord_2d_t c;
 
-    a->x = b->x = 0;
-    a->y = b->y = 0;
-    c->x=c->y=0;
-    ck_assert(coord_2d_area_triangle(a, b,c )==0);
+    a.x = b.x = 0;
+    a.y = b.y = 0;
+    c.x=c.y=0;
+    ck_assert(coord_2d_area_triangle(&a, &b,&c )==0);
 }
 END_TEST
 
